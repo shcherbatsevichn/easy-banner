@@ -1,11 +1,11 @@
 <?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();?>
 
 <?
-echo 'arParams<br>';
+/*echo 'arParams<br>';
 dump($arParams);
 echo '<br>arResult<br>';
 dump($arResult);
-echo'<br>';
+echo'<br>';*/
 
 ?>
 

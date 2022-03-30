@@ -1,6 +1,5 @@
 var slideIndex = 1;
-
-
+//автопереключение слайдов
 var interval = setInterval(function() {
     slideIndex++;
     showSlide(slideIndex);
@@ -21,7 +20,7 @@ window.selectSlide = function(n) {
     showSlide(slideIndex);
 }
 diactiveNavigation = function() {
-    let navNods = document.querySelectorAll('a.slider-control-link');
+    let navNods = document.querySelectorAll('a.slider-control-link.active');
     navNods.forEach(nod => {
         nod.classList.remove('active')
     })
@@ -45,6 +44,7 @@ showSlide = function(n) {
     });
     diactiveNavigation();
     let activeSlide = document.querySelector('div[data-slide-numb="' + n + '"]');
+    console.log('div[data-slide-numb="' + n + '"]');
     activeSlide.style.display = 'flex';
     activeActulNav(n);
 }
